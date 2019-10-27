@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html>
+  <head id="head">
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no;"  name="viewport" />
+    <link rel="shortcut icon" href="./static/images/logo1.png"/>
+    <!-- <link rel="stylesheet" href="//unpkg.com/vue-ydui/dist/ydui.base.css"> -->
+    <title>新宝商城</title>
+    <script type="text/javascript" src="https://cdn.bootcss.com/babel-polyfill/6.23.0/polyfill.min.js"></script>
+  </head>
+  <body>
+    <div id="app" ></div>
+    <!-- built files will be auto injected -->
+    
+    <!-- 移动端调试工具，上线时注释 -->
+    <!-- <script src="./static/js/eruda.min.js"></script>
+    <script>eruda.init();</script> -->
+    
+    <!-- 引入组件库 -->
+    <!-- <script src="//unpkg.com/vue-ydui/dist/ydui.rem.js"></script> -->
+    <script type="text/javascript" src="./static/js/auto-size.js"></script>
+    <script type="text/javascript" src="./static/js/json_area.js"></script>
+    <script>
+        //解决苹果手机上safira浏览器，不能禁止缩放问题
+        window.onload=function () {  
+            document.addEventListener('touchstart',function (event) {  
+                if(event.touches.length>1){  
+                    event.preventDefault();  
+                }  
+            })  
+            var lastTouchEnd=0;  
+            document.addEventListener('touchend',function (event) {  
+                var now=(new Date()).getTime();  
+                if(now-lastTouchEnd<=500){  
+                    event.preventDefault();  
+                }  
+                lastTouchEnd=now;  
+            },false)  
+        }
+
+        //解决安卓手机上部分UC浏览器，不能禁止缩放问题
+        var t = setTimeout(() => {
+            // console.log(1)
+            document.getElementById('head').append('<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />');
+        },1000);
+
+        //处理手机默认返回
+        XBack = {};  
+        (function(XBack) {  
+            XBack.STATE = 'x - back';  
+            XBack.element;  
+          
+            XBack.onPopState = function(event) {  
+                event.state === XBack.STATE && XBack.fire();  
+                XBack.record(XBack.STATE); //初始化事件时，push一下  
+            };  
+          
+            XBack.record = function(state) {  
+                history.pushState(state, null, location.href);  
+            };  
+          
+            XBack.fire = function() {  
+                var event = document.createEvent('Events');  
+                event.initEvent(XBack.STATE, false, false);  
+                XBack.element.dispatchEvent(event);  
+            };  
+          
+            XBack.listen = function(listener) {  
+                XBack.element.addEventListener(XBack.STATE, listener, false);  
+            };  
+          
+            XBack.init = function() {  
+                XBack.element = document.createElement('span');  
+                window.addEventListener('popstate', XBack.onPopState);  
+                XBack.record(XBack.STATE);  
+            };  
+          
+        })(XBack); // 引入这段js文件  
+          
+        XBack.init();  
+        XBack.listen(function() {}); 
+
+        /*阻止用户双击使屏幕上滑*/
+        var agent = navigator.userAgent.toLowerCase();        //检测是否是ios
+        var iLastTouch = null;                                //缓存上一次tap的时间
+        if (agent.indexOf('iphone') >= 0 || agent.indexOf('ipad') >= 0){
+            document.body.addEventListener('touchend', function(event){
+                var iNow = new Date().getTime();
+                iLastTouch = iLastTouch || iNow + 1 /** 第一次时将iLastTouch设为当前时间+1 */ ;
+                var delta = iNow - iLastTouch;
+                if (delta < 500 && delta > 0){
+                    event.preventDefault();
+                    return false;
+                }
+                iLastTouch = iNow;
+            }, false);
+        }
+    </script>
+  </body>
+</html>

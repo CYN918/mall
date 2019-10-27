@@ -1,0 +1,131 @@
+export default [
+  {
+    "bankname":"中国工商银行",
+    bankLogo:'./static/images/bankicon/ic_gongshang.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_gongshang@2x.png',
+ },{
+    "bankname":"中国银行",
+    bankLogo:'./static/images/bankicon/ic_zhonggu.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_zhonggu@2x.png',
+},{
+    "bankname":"中国农业银行",
+    bankLogo:'./static/images/bankicon/ic_nongye.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_nongye@2x.png',
+},{
+    "bankname":"中国建设银行",
+    bankLogo:'./static/images/bankicon/ic_jianshe.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_jianshe@2x.png',
+},{
+    "bankname":"招商银行",
+     bankLogo:'./static/images/bankicon/ic_zhaoshang.png',
+     bankfullLogo:'./static/images/bankicon/2x/ic_zhaoshang@2x.png',
+},{
+    "bankname":"交通银行",
+    bankLogo:'./static/images/bankicon/ic_jiaotong.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_jiaotong@2x.png',
+},{
+    "bankname":"广发银行",
+    bankLogo:'./static/images/bankicon/ic_guangfa.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_guangfa@2x.png',
+},{
+    "bankname":"平安银行",
+    bankLogo:'./static/images/bankicon/ic_pingan.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_pingan@2x.png',
+},{
+    "bankname":"浦东发展银行",
+    bankLogo:'./static/images/bankicon/ic_pufa.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_pufa@2x.png',
+},{
+    "bankname":"民生银行",
+    bankLogo:'./static/images/bankicon/ic_minsheng.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_minsheng@2x.png',
+},{
+    "bankname":"光大银行",
+    bankLogo:'./static/images/bankicon/ic_guangda.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_guangda@2x.png',
+},{
+    "bankname":"兴业银行",
+    bankLogo:'./static/images/bankicon/ic_xingye.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_xingye@2x.png',
+},{
+    "bankname":"中信银行",
+    bankLogo:'./static/images/bankicon/ic_zhongxin.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_zhongxin@2x.png',
+},{
+    "bankname":"华夏银行",
+    bankLogo:'./static/images/bankicon/ic_huaxia.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_huaxia@2x.png',
+},{
+    "bankname":"杭州银行",
+    bankLogo:'./static/images/bankicon/ic_hangzhou.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_hangzhou@2x.png',
+},{
+    "bankname":"北京银行",
+    bankLogo:'./static/images/bankicon/ic_beijing.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_beijing@2x.png',
+},{
+    "bankname":"浙商银行",
+    bankLogo:'./static/images/bankicon/ic_zheshang.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_zheshang@2x.png',
+},{
+    "bankname":"上海银行",
+    bankLogo:'./static/images/bankicon/ic_shanghai.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_shanghai@2x.png',
+},{
+    "bankname":"广州银行",
+    bankLogo:'./static/images/bankicon/ic_guangzhou.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_guangzhou@2x.png',
+},{
+    "bankname":"东莞农村商业银行",
+    bankLogo:'./static/images/bankicon/ic_dongguannongcun.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_dongguannongcun@2x.png',
+},{
+    "bankname":"广东省农村信用联合社",
+    bankLogo:'./static/images/bankicon/ic_guangdong_xinhezuoshe.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_guangdong_xinhezuoshe@2x.png',
+},{
+    "bankname":"广州农村商业银行",
+    bankLogo:'./static/images/bankicon/ic_guangzhou_nongshang.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_guangzhou_nongshang@2x.png',
+},{
+    "bankname":"深圳农村商业银行",
+    bankLogo:'./static/images/bankicon/ic_shenzhen_nongye.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_shenzhen_nongye@2x.png',
+},{
+    "bankname":"宁波银行",
+    bankLogo:'./static/images/bankicon/ic_ningbo.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_ningbo@2x.png',
+},{
+    "bankname":"甘肃省农村信用联合社",
+    bankLogo:'./static/images/bankicon/ic_gansu_nongxin.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_gansu_nongxin@2x.png',
+},{
+    "bankname":"江苏银行",
+    bankLogo:'./static/images/bankicon/ic_zhonggu.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_zhonggu@2x.png',
+},{
+    "bankname":"江苏长江商业银行",
+    bankLogo:'./static/images/bankicon/ic_jiangsu.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_jiangsu@2x.png',
+},{
+    "bankname":"黑龙江省农村信用联合社",
+    bankLogo:'./static/images/bankicon/ic_heilongjiang_nongxin.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_heilongjiang_nongxin@2x.png',
+},{
+    "bankname":"恒丰银行",
+    bankLogo:'./static/images/bankicon/ic_hengfeng.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_hengfeng@2x.png',
+},{
+    "bankname":"广东南粤银行",
+    bankLogo:'./static/images/bankicon/ic_guangdong_nanyue.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_guangdong_nanyue@2x.png',
+},{
+    "bankname":"东莞银行",
+    bankLogo:'./static/images/bankicon/ic_dongguan.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_dongguan@2x.png',
+},{
+    "bankname":"武汉农村商业银行",
+    bankLogo:'./static/images/bankicon/ic_huhan_nongshang.png',
+    bankfullLogo:'./static/images/bankicon/2x/ic_huhan_nongshang@2x.png',
+},
+]
